@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="De-Ambassador Onuoha Ventures sells original phones, routers, MiFis, two-way radios and accessories at Ohonba Plaza, Ibeju-Lekki, Lagos. Call 07059773030 or 09041503035.">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>De-Ambassador Onuoha Ventures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#F2F5F4; --surface:#FFFFFF; --ink:#0F1E26; --muted:#56666E; --line:#D7DFDD;
+  --brand:#2346D8; --brand-ink:#FFFFFF; --amber:#F5B301; --amber-ink:#2A1E00;
+  --soft:#E6ECFF; --ok:#1F8A5B;
+  --display:"Unbounded",system-ui,sans-serif; --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B1419; --surface:#121E25; --ink:#E7EEF0; --muted:#94A6AE; --line:#23343D;
+    --brand:#6F8BFF; --brand-ink:#08112E; --amber:#FFC530; --amber-ink:#231900; --soft:#17244F; --ok:#4CC38A;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B1419; --surface:#121E25; --ink:#E7EEF0; --muted:#94A6AE; --line:#23343D;
+  --brand:#6F8BFF; --brand-ink:#08112E; --amber:#FFC530; --amber-ink:#231900; --soft:#17244F; --ok:#4CC38A;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;padding-inline:16px}
+.wrap{max-width:1160px;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.1;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:6px}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 15px var(--body);padding:12px 18px;border-radius:10px;border:1.5px solid transparent;cursor:pointer;text-decoration:none;transition:transform .15s, background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--brand);color:var(--brand-ink)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-amber{background:var(--amber);color:var(--amber-ink)}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-inline:-16px;padding-inline:16px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:16px;line-height:1.15;min-width:0}
+.lname{white-space:nowrap}
+@media (max-width:480px){.logo{font-size:12px;gap:7px}.cart-btn{padding:10px 12px;font-size:14px}}
+.bars{display:inline-flex;align-items:flex-end;gap:3px;height:20px}
+.bars i{display:block;width:4px;background:var(--brand);border-radius:2px}
+.bars i:nth-child(1){height:6px}.bars i:nth-child(2){height:10px}.bars i:nth-child(3){height:15px}.bars i:nth-child(4){height:20px;background:var(--amber)}
+.links{display:flex;gap:22px;font-weight:500}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+.cart-btn{position:relative;flex-shrink:0}
+.bshort{display:none}
+@media (max-width:480px){.btxt{display:none}.bshort{display:inline}}
+.count{background:var(--amber);color:var(--amber-ink);font:600 12px var(--mono);border-radius:99px;padding:1px 7px}
+@media (max-width:760px){.links{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-block:56px 40px}
+.hero h1{font-size:clamp(34px,5.4vw,60px);font-weight:700;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.hero .lede{margin-top:18px;font-size:19px;color:var(--muted);max-width:52ch}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:28px}
+.facts span{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+.meter{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;gap:18px}
+.meter-head{display:flex;justify-content:space-between;align-items:center}
+.live{display:inline-flex;align-items:center;gap:6px;font:600 12px var(--mono);color:var(--ok)}
+.live::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.sigbars{display:flex;align-items:flex-end;gap:10px;height:130px}
+.sigbars div{flex:1;background:var(--soft);border-radius:8px 8px 3px 3px;position:relative;overflow:hidden}
+.sigbars div::after{content:"";position:absolute;inset:auto 0 0 0;height:var(--h);background:var(--brand);border-radius:inherit;animation:rise 1.2s ease-out both}
+.sigbars div:last-child::after{background:var(--amber)}
+@keyframes rise{from{height:8%}}
+.readout{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-family:var(--mono);font-size:13px}
+.readout div{border-top:1px solid var(--line);padding-top:10px}
+.readout b{display:block;font-size:18px;color:var(--ink);font-weight:600}
+@media (max-width:860px){.hero{grid-template-columns:1fr;padding-block:36px 24px}}
+
+/* strip */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-block:8px 64px}
+.strip div{background:var(--surface);padding:18px 20px;display:grid;gap:4px}
+.strip strong{font-size:15px}
+.strip span{font-size:14px;color:var(--muted)}
+@media (max-width:760px){.strip{grid-template-columns:1fr 1fr}}
+
+/* section heads */
+section{scroll-margin-top:80px}
+.shead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:24px}
+.shead h2{font-size:clamp(26px,3.4vw,38px);font-weight:700;margin-top:8px}
+
+/* shop */
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:22px}
+.chip{font:500 14px var(--body);padding:8px 14px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.search{flex:1 1 220px;max-width:320px;margin-left:auto;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:15px var(--body)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;grid-template-rows:auto auto 1fr auto;gap:10px}
+.thumb{aspect-ratio:4/3;max-width:100%;background:var(--soft);border-radius:10px;display:grid;place-items:center;position:relative}
+.thumb svg{width:44%;height:auto;color:var(--brand)}
+.tag{position:absolute;top:10px;left:10px;font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--amber);color:var(--amber-ink);padding:3px 8px;border-radius:6px}
+.card h3{font-family:var(--body);font-size:17px;font-weight:700;line-height:1.3}
+.specs{font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px}
+.specs span{border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+.buy{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:6px}
+.price{font:700 19px var(--body);font-variant-numeric:tabular-nums}
+.add{font:600 14px var(--body);padding:9px 12px;border-radius:9px;border:1.5px solid var(--brand);background:transparent;color:var(--brand);cursor:pointer}
+.add.on{background:var(--brand);color:var(--brand-ink)}
+.empty{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+.svc article{border-top:3px solid var(--brand);padding-top:16px;display:grid;gap:8px}
+.svc article:nth-child(2){border-color:var(--amber)}
+.svc h3{font-family:var(--body);font-size:19px;font-weight:700}
+.svc p{color:var(--muted)}
+.svc ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:4px}
+@media (max-width:860px){.svc{grid-template-columns:1fr}}
+
+/* band */
+.band{background:var(--ink);color:var(--bg);border-radius:20px;padding:40px clamp(20px,4vw,48px);display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-block:80px}
+.band h2{font-size:clamp(24px,3vw,34px)}
+.band .label{color:color-mix(in srgb,var(--bg) 65%,var(--ink))}
+.steps{display:grid;gap:16px;counter-reset:s}
+.steps li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+.steps li::before{counter-increment:s;content:counter(s);font:700 14px var(--mono);background:var(--amber);color:var(--amber-ink);width:30px;height:30px;border-radius:50%;display:grid;place-items:center}
+.steps{padding:0;margin:0}
+.steps p{color:color-mix(in srgb,var(--bg) 72%,var(--ink));font-size:15px}
+@media (max-width:760px){.band{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;margin-bottom:72px}
+.info{display:grid;gap:18px;align-content:start}
+.info dl{margin:0;display:grid;gap:14px}
+.info dt{margin-bottom:2px}
+.info dd{margin:0;font-weight:600}
+.copyrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.mini{font:600 12px var(--mono);padding:4px 8px;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.hours{font-family:var(--mono);font-size:14px;display:grid;grid-template-columns:auto 1fr;gap:4px 18px;font-variant-numeric:tabular-nums}
+form{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:14px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:grid;gap:6px;font-weight:600;font-size:14px}
+input,select,textarea{font:15px var(--body);padding:11px 12px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+textarea{min-height:110px;resize:vertical}
+.ok{background:color-mix(in srgb,var(--ok) 14%,var(--surface));border:1px solid var(--ok);border-radius:10px;padding:14px;font-size:15px}
+@media (max-width:860px){.contact{grid-template-columns:1fr}.row{grid-template-columns:1fr}}
+
+/* drawer */
+.drawer{position:fixed;inset:0 0 0 auto;width:min(420px,100%);background:var(--surface);border-left:1px solid var(--line);z-index:40;display:grid;grid-template-rows:auto 1fr auto;padding:calc(20px + env(safe-area-inset-top,0px)) 20px calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(100%);transition:transform .25s}
+.drawer.open{transform:none}
+.scrim{position:fixed;inset:0;background:rgba(5,12,16,.45);z-index:30}
+.dhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.dhead h2{font-size:20px}
+.items{overflow:auto;display:grid;gap:10px;align-content:start}
+.item{display:grid;grid-template-columns:1fr auto;gap:6px 10px;border-bottom:1px solid var(--line);padding-block:10px}
+.qty{display:flex;align-items:center;gap:8px;font-family:var(--mono)}
+.qty button{width:28px;height:28px;border-radius:7px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.total{display:flex;justify-content:space-between;font-weight:700;font-size:18px;padding-block:14px;font-variant-numeric:tabular-nums}
+.msg{font-family:var(--mono);font-size:12px;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:10px;white-space:pre-wrap;max-height:140px;overflow:auto;margin-bottom:12px}
+
+footer{border-top:1px solid var(--line);padding-block:28px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--muted);font-size:14px}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="lname">De‑Ambassador Onuoha <small>Ventures</small></span></a>
+    <nav class="links" aria-label="Main">
+      <a href="#shop">Shop</a><a href="#services">Services</a><a href="#how">How to buy</a><a href="#contact">Visit us</a>
+    </nav>
+    <button class="btn btn-ghost cart-btn" id="openCart" type="button"><span class="btxt">Enquiry list</span><span class="bshort">List</span> <span class="count" id="count">0</span></button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <section class="hero">
+    <div>
+      <p class="label">Phones · Networking · Accessories · Repairs</p>
+      <h1 style="margin-top:14px">Stay connected with gadgets that <em>work</em> on every network.</h1>
+      <p class="lede">De‑Ambassador Onuoha Ventures sells original smartphones, internet routers, MiFis, two‑way radios and accessories. Every device is tested on MTN, Airtel, Glo and 9mobile before it leaves the shop.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#shop">Browse devices</a>
+        <a class="btn btn-ghost" href="#contact">Talk to a sales rep</a>
+      </div>
+      <div class="facts">
+        <span><b>IMEI</b>‑verified phones</span>
+        <span><b>12‑month</b> warranty</span>
+        <span><b>36 states</b> delivery</span>
+      </div>
+    </div>
+    <div class="meter" aria-label="Device test readout">
+      <div class="meter-head"><span class="label">Bench test · MiFi 4G LTE</span><span class="live">PASS</span></div>
+      <div class="sigbars" aria-hidden="true">
+        <div style="--h:34%"></div><div style="--h:52%"></div><div style="--h:70%"></div><div style="--h:86%"></div><div style="--h:100%"></div>
+      </div>
+      <div class="readout">
+        <div class="label">RSRP<b>−84 dBm</b></div>
+        <div class="label">Band<b>B3 · 1800</b></div>
+        <div class="label">Down<b>48 Mbps</b></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div><strong>Original stock</strong><span>Sealed boxes, serials you can check</span></div>
+    <div><strong>Pay on pickup</strong><span>Transfer, POS or cash in store</span></div>
+    <div><strong>Same‑day Lekki axis</strong><span>Orders confirmed before 2 pm</span></div>
+    <div><strong>Bulk pricing</strong><span>For offices, schools and resellers</span></div>
+  </div>
+
+  <section id="shop">
+    <div class="shead">
+      <div><p class="label">Shop</p><h2>Devices in stock</h2></div>
+      <p style="color:var(--muted);max-width:42ch">Add items to your enquiry list, then send it to us. We confirm stock and the final price before you pay.</p>
+    </div>
+    <div class="tools" role="toolbar" aria-label="Filter products">
+      <div id="chips" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+      <input class="search" id="q" type="search" placeholder="Search devices" aria-label="Search devices">
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Prices shown are sample prices in naira. Replace them with your current prices.</p>
+  </section>
+
+  <section id="services" style="margin-top:80px">
+    <div class="shead"><div><p class="label">Services</p><h2>More than a shop counter</h2></div></div>
+    <div class="svc">
+      <article>
+        <h3>Repairs &amp; diagnostics</h3>
+        <p>Our technicians fix most faults the same day.</p>
+        <ul><li>Screen and battery replacement</li><li>Charging port and mouthpiece faults</li><li>Water damage recovery</li></ul>
+      </article>
+      <article>
+        <h3>Home &amp; office internet</h3>
+        <p>We pick the right router for your area and set it up.</p>
+        <ul><li>Signal check before you buy</li><li>Router and MiFi configuration</li><li>Outdoor antenna installation</li></ul>
+      </article>
+      <article>
+        <h3>Corporate supply</h3>
+        <p>Phones, radios and accessories for teams of any size.</p>
+        <ul><li>Invoiced bulk orders</li><li>Staff phone setup and SIM activation</li><li>Two‑way radio fleets for security teams</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="band" id="how">
+    <div>
+      <p class="label">How to buy</p>
+      <h2 style="margin-top:10px">Order in three steps, from anywhere in Nigeria.</h2>
+    </div>
+    <ol class="steps">
+      <li><div><strong>Build your list</strong><p>Tap “Add” on any device and open your enquiry list.</p></div></li>
+      <li><div><strong>Send it on WhatsApp</strong><p>Copy the ready‑made message and send it to our sales line.</p></div></li>
+      <li><div><strong>Pay and receive</strong><p>We confirm stock and price, then you pick up in store or we deliver.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="info">
+      <div><p class="label">Visit us</p><h2 style="margin-top:8px;font-size:clamp(26px,3.4vw,38px)">Come test before you buy</h2></div>
+      <dl>
+        <div><dt class="label">Showroom</dt><dd>Ohonba Plaza, Opp. Total Filling Station, Ibeju‑Lekki, Lagos State</dd></div>
+        <div><dt class="label">Sales &amp; WhatsApp</dt><dd class="copyrow"><span id="phone">0705 977 3030</span><button class="mini" type="button" data-copy="phone">Copy</button></dd></div>
+        <div><dt class="label">Sales line 2</dt><dd class="copyrow"><span id="phone2b">0904 150 3035</span><button class="mini" type="button" data-copy="phone2b">Copy</button></dd></div>
+      </dl>
+      <div>
+        <p class="label" style="margin-bottom:8px">Opening hours (WAT)</p>
+        <div class="hours"><span>Mon – Fri</span><span>08:30 – 19:00</span><span>Saturday</span><span>09:00 – 18:00</span><span>Sunday</span><span>13:00 – 17:00</span></div>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <div class="row">
+        <label for="fname">Your name<input id="fname" name="name" required placeholder="Adaeze Okafor"></label>
+        <label for="fphone">Phone number<input id="fphone" name="phone" required inputmode="tel" placeholder="0803 123 4567"></label>
+      </div>
+      <label for="ftopic">What do you need?
+        <select id="ftopic" name="topic">
+          <option>Buy a device</option><option>Repair</option><option>Home or office internet</option><option>Bulk / corporate order</option>
+        </select>
+      </label>
+      <label for="fmsg">Message<textarea id="fmsg" name="msg" placeholder="Tell us the device, budget or fault."></textarea></label>
+      <button class="btn btn-primary" type="submit" style="justify-self:start">Prepare message</button>
+      <div id="formOut" hidden></div>
+    </form>
+  </section>
+</main>
+
+<div class="wrap"><footer><span>© 2026 De‑Ambassador Onuoha Ventures · Ohonba Plaza, Ibeju‑Lekki, Lagos</span><span>0705 977 3030 · 0904 150 3035</span></footer></div>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Enquiry list" aria-hidden="true">
+  <div class="dhead"><h2>Enquiry list</h2><button class="mini" id="closeCart" type="button">Close</button></div>
+  <div class="items" id="items"></div>
+  <div>
+    <div class="total"><span>Estimated total</span><span id="total">₦0</span></div>
+    <p class="label" style="margin-bottom:6px">Message to send us</p>
+    <div class="msg" id="msg"></div>
+    <button class="btn btn-amber" id="copyMsg" type="button" style="width:100%;justify-content:center">Copy message</button>
+    <p class="note">Paste it into WhatsApp to <span id="phone2">0705 977 3030</span> or 0904 150 3035.</p>
+  </div>
+</aside>
+
+<script>
+const ICONS={
+ phones:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="13" y="4" width="22" height="40" rx="4"/><path d="M21 38h6"/></svg>',
+ internet:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="6" y="28" width="36" height="12" rx="3"/><path d="M14 28V14M34 28V14M12 34h2M18 34h2"/><path d="M18 10a9 9 0 0 1 12 0" /></svg>',
+ radios:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="14" y="14" width="20" height="30" rx="3"/><path d="M20 14V4M19 22h10M19 28h10M19 34h10"/></svg>',
+ audio:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 28a16 16 0 0 1 32 0"/><rect x="6" y="28" width="8" height="14" rx="3"/><rect x="34" y="28" width="8" height="14" rx="3"/></svg>',
+ power:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="10" y="8" width="28" height="34" rx="4"/><path d="M26 16l-6 10h8l-6 10"/></svg>',
+ wearables:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="12" y="13" width="24" height="22" rx="6"/><path d="M17 13l2-9h10l2 9M17 35l2 9h10l2-9M24 20v5l3 2"/></svg>'
+};
+const CATS=[["all","All"],["phones","Phones & tablets"],["internet","Routers & MiFi"],["radios","Two‑way radios"],["audio","Audio"],["power","Power & charging"],["wearables","Wearables"]];
+const P=[
+ {id:1,c:"phones",n:"5G Android smartphone",s:["128 GB","8 GB RAM","5000 mAh"],p:385000,t:"Bestseller"},
+ {id:2,c:"phones",n:"4G budget smartphone",s:["64 GB","Dual SIM","6.5\""],p:118000},
+ {id:3,c:"phones",n:"Rugged feature phone",s:["Dual SIM","Torch","2500 mAh"],p:24500},
+ {id:4,c:"phones",n:"10‑inch Android tablet",s:["LTE","128 GB","7000 mAh"],p:265000},
+ {id:5,c:"internet",n:"4G LTE pocket MiFi",s:["Cat 4","10 users","3000 mAh"],p:42000,t:"New"},
+ {id:6,c:"internet",n:"5G home router",s:["Wi‑Fi 6","64 users","2 × LAN"],p:198000},
+ {id:7,c:"internet",n:"Outdoor LTE CPE antenna",s:["B3/B20/B28","IP66","PoE"],p:96000},
+ {id:8,c:"internet",n:"Wi‑Fi mesh kit, 2‑pack",s:["AX3000","Up to 400 m²"],p:154000},
+ {id:9,c:"radios",n:"UHF two‑way radio pair",s:["5 W","16 ch","Up to 5 km"],p:68000},
+ {id:10,c:"radios",n:"Radio fleet pack, 6 units",s:["UHF","Multi‑charger","Earpieces"],p:189000,t:"Bulk"},
+ {id:11,c:"audio",n:"Wireless earbuds with ANC",s:["BT 5.3","30 h case","IPX4"],p:38500},
+ {id:12,c:"audio",n:"Neckband headset",s:["BT 5.0","18 h","Mic"],p:12500},
+ {id:13,c:"power",n:"20,000 mAh power bank",s:["22.5 W","USB‑C PD","3 ports"],p:27000,t:"Bestseller"},
+ {id:14,c:"power",n:"65 W GaN wall charger",s:["2 × USB‑C","1 × USB‑A"],p:21500},
+ {id:15,c:"power",n:"Braided USB‑C cable, 2 m",s:["60 W","480 Mbps"],p:4500},
+ {id:16,c:"wearables",n:"Smartwatch with calling",s:["1.9\" AMOLED","7‑day battery"],p:46000}
+];
+const naira=v=>"₦"+v.toLocaleString("en-NG");
+let cat="all",q="",cart={};
+
+const chips=document.getElementById("chips");
+chips.innerHTML=CATS.map(([k,l])=>`<button class="chip" type="button" data-k="${k}" aria-pressed="${k==="all"}">${l}</button>`).join("");
+chips.addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;cat=b.dataset.k;chips.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));render()});
+document.getElementById("q").addEventListener("input",e=>{q=e.target.value.trim().toLowerCase();render()});
+
+function render(){
+  const list=P.filter(p=>(cat==="all"||p.c===cat)&&(!q||(p.n+" "+p.s.join(" ")).toLowerCase().includes(q)));
+  const g=document.getElementById("grid");
+  if(!list.length){g.innerHTML='<div class="empty" style="grid-column:1/-1">No devices match that search. Try another word or pick “All”.</div>';return}
+  g.innerHTML=list.map(p=>`<article class="card">
+    <div class="thumb">${p.t?`<span class="tag">${p.t}</span>`:""}${ICONS[p.c]}</div>
+    <h3>${p.n}</h3>
+    <div class="specs">${p.s.map(x=>`<span>${x}</span>`).join("")}</div>
+    <div class="buy"><span class="price">${naira(p.p)}</span><button class="add ${cart[p.id]?"on":""}" type="button" data-id="${p.id}">${cart[p.id]?"Added ✓":"Add"}</button></div>
+  </article>`).join("");
+}
+document.getElementById("grid").addEventListener("click",e=>{const b=e.target.closest(".add");if(!b)return;const id=+b.dataset.id;cart[id]=cart[id]?0:1;if(!cart[id])delete cart[id];render();renderCart()});
+
+function renderCart(){
+  const ids=Object.keys(cart);
+  document.getElementById("count").textContent=ids.reduce((a,k)=>a+cart[k],0);
+  const it=document.getElementById("items");
+  if(!ids.length){it.innerHTML='<p style="color:var(--muted)">Your list is empty. Add devices from the shop.</p>'}
+  else it.innerHTML=ids.map(k=>{const p=P.find(x=>x.id==k);return`<div class="item"><strong>${p.n}</strong><span style="font-variant-numeric:tabular-nums">${naira(p.p*cart[k])}</span><div class="qty"><button type="button" data-d="-1" data-k="${k}" aria-label="Fewer">−</button>${cart[k]}<button type="button" data-d="1" data-k="${k}" aria-label="More">+</button></div></div>`}).join("");
+  const tot=ids.reduce((a,k)=>a+P.find(x=>x.id==k).p*cart[k],0);
+  document.getElementById("total").textContent=naira(tot);
+  document.getElementById("msg").textContent=ids.length?"Hello De-Ambassador Onuoha Ventures, I'd like to order:\n"+ids.map(k=>{const p=P.find(x=>x.id==k);return`• ${cart[k]} × ${p.n} (${naira(p.p)})`}).join("\n")+`\nEstimated total: ${naira(tot)}\nPlease confirm availability.`:"Add devices to build your message.";
+}
+document.getElementById("items").addEventListener("click",e=>{const b=e.target.closest("button[data-k]");if(!b)return;const k=b.dataset.k;cart[k]+= +b.dataset.d;if(cart[k]<=0)delete cart[k];renderCart();render()});
+
+const drawer=document.getElementById("drawer"),scrim=document.getElementById("scrim");
+function setOpen(o){drawer.classList.toggle("open",o);drawer.setAttribute("aria-hidden",!o);scrim.hidden=!o}
+document.getElementById("openCart").onclick=()=>setOpen(true);
+document.getElementById("closeCart").onclick=()=>setOpen(false);
+scrim.onclick=()=>setOpen(false);
+document.addEventListener("keydown",e=>{if(e.key==="Escape")setOpen(false)});
+
+function copyText(text,btn,el){
+  const done=()=>{const o=btn.textContent;btn.textContent="Copied";setTimeout(()=>btn.textContent=o,1500)};
+  const fallback=()=>{if(!el)return;const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent="Selected, press copy"};
+  try{navigator.clipboard.writeText(text).then(done,fallback)}catch(_){fallback()}
+}
+document.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>{const el=document.getElementById(b.dataset.copy);copyText(el.textContent,b,el)});
+document.getElementById("copyMsg").onclick=e=>{const el=document.getElementById("msg");copyText(el.textContent,e.currentTarget,el)};
+
+document.getElementById("form").addEventListener("submit",e=>{
+  e.preventDefault();const f=e.target,out=document.getElementById("formOut");
+  if(!f.name.value.trim()||!f.phone.value.trim()){out.hidden=false;out.className="";out.style.color="#C0392B";out.textContent="Add your name and phone number so we can reply.";return}
+  out.hidden=false;out.style.color="";out.className="ok";
+  out.innerHTML=`<strong>Your message is ready.</strong> Copy it and send it to our WhatsApp line.<div class="msg" id="formMsg" style="margin-top:10px"></div><button class="mini" type="button" id="copyForm">Copy message</button>`;
+  document.getElementById("formMsg").textContent=`Hello De-Ambassador Onuoha Ventures, my name is ${f.name.value.trim()} (${f.phone.value.trim()}).\nTopic: ${f.topic.value}\n${f.msg.value.trim()}`;
+  document.getElementById("copyForm").onclick=ev=>copyText(document.getElementById("formMsg").textContent,ev.currentTarget,document.getElementById("formMsg"));
+});
+
+render();renderCart();
+</script>
+
+</body>
+</html>
