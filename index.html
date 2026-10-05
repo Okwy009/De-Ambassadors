@@ -127,13 +127,14 @@ section{scroll-margin-top:80px}
 .note{font-size:13px;color:var(--muted);margin-top:14px}
 
 /* services */
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
-.svc article{border-top:3px solid var(--brand);padding-top:16px;display:grid;gap:8px}
-.svc article:nth-child(2){border-color:var(--amber)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
+.svc article{border-top:3px solid var(--brand);padding-top:16px;display:grid;gap:8px;align-content:start}
+.svc article:nth-child(even){border-color:var(--amber)}
 .svc h3{font-family:var(--body);font-size:19px;font-weight:700}
 .svc p{color:var(--muted)}
 .svc ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:4px}
-@media (max-width:860px){.svc{grid-template-columns:1fr}}
+@media (max-width:1040px){.svc{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.svc{grid-template-columns:1fr}}
 
 /* band */
 .band{background:var(--ink);color:var(--bg);border-radius:20px;padding:40px clamp(20px,4vw,48px);display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-block:80px}
@@ -194,7 +195,7 @@ footer{border-top:1px solid var(--line);padding-block:28px 40px;display:flex;fle
 <main class="wrap" id="top">
   <section class="hero">
     <div>
-      <p class="label">Phones · Networking · Accessories · Repairs</p>
+      <p class="label">Phones · Networking · Data plans · Repairs</p>
       <h1 style="margin-top:14px">Stay connected with gadgets that <em>work</em> on every network.</h1>
       <p class="lede">De‑Ambassador Onuoha Ventures sells original smartphones, internet routers, MiFis, two‑way radios and accessories. Every device is tested on MTN, Airtel, Glo and 9mobile before it leaves the shop.</p>
       <div class="ctas">
@@ -251,6 +252,11 @@ footer{border-top:1px solid var(--line);padding-block:28px 40px;display:flex;fle
         <p>Phones, radios and accessories for teams of any size.</p>
         <ul><li>Invoiced bulk orders</li><li>Staff phone setup and SIM activation</li><li>Two‑way radio fleets for security teams</li></ul>
       </article>
+      <article>
+        <h3>Internet subscriptions</h3>
+        <p>Renew your data plan in store or over WhatsApp, and stay online.</p>
+        <ul><li>MTN, Airtel, Glo and 9mobile data bundles</li><li>Monthly router and MiFi plan renewals</li><li>Help picking a plan that fits your usage</li></ul>
+      </article>
     </div>
   </section>
 
@@ -286,7 +292,7 @@ footer{border-top:1px solid var(--line);padding-block:28px 40px;display:flex;fle
       </div>
       <label for="ftopic">What do you need?
         <select id="ftopic" name="topic">
-          <option>Buy a device</option><option>Repair</option><option>Home or office internet</option><option>Bulk / corporate order</option>
+          <option>Buy a device</option><option>Repair</option><option>Home or office internet</option><option>Internet subscription</option><option>Bulk / corporate order</option>
         </select>
       </label>
       <label for="fmsg">Message<textarea id="fmsg" name="msg" placeholder="Tell us the device, budget or fault."></textarea></label>
